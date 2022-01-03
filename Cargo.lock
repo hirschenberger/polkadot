@@ -6888,6 +6888,7 @@ dependencies = [
  "serde",
  "sp-api",
  "sp-core",
+ "sp-debug-derive",
  "sp-inherents",
  "sp-io",
  "sp-keyring",
