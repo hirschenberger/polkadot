@@ -763,6 +763,7 @@ impl pallet_identity::Config for Runtime {
 	type ForceOrigin = MoreThanHalfCouncil;
 	type RegistrarOrigin = MoreThanHalfCouncil;
 	type WeightInfo = weights::pallet_identity::WeightInfo<Runtime>;
+	type IdentityInfo = pallet_identity::IdentityInfo<MaxAdditionalFields>;
 }
 
 impl pallet_utility::Config for Runtime {

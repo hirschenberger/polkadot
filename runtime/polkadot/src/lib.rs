@@ -633,6 +633,7 @@ impl pallet_identity::Config for Runtime {
 	type ForceOrigin = EitherOf<EnsureRoot<Self::AccountId>, GeneralAdmin>;
 	type RegistrarOrigin = EitherOf<EnsureRoot<Self::AccountId>, GeneralAdmin>;
 	type WeightInfo = weights::pallet_identity::WeightInfo<Runtime>;
+	type IdentityInfo = pallet_identity::IdentityInfo<MaxAdditionalFields>;
 }
 
 parameter_types! {

@@ -666,6 +666,7 @@ impl pallet_identity::Config for Runtime {
 	type RegistrarOrigin = frame_system::EnsureRoot<AccountId>;
 	type ForceOrigin = frame_system::EnsureRoot<AccountId>;
 	type WeightInfo = weights::pallet_identity::WeightInfo<Runtime>;
+	type IdentityInfo = pallet_identity::IdentityInfo<MaxAdditionalFields>;
 }
 
 impl pallet_utility::Config for Runtime {
